@@ -1,5 +1,8 @@
 # autonet14plus-mini
 
+!!!
+pip install -r requirements.txt
+
 Для Windows Python 3.10! 
 
 PS> Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
