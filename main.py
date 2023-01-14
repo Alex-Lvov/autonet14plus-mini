@@ -5,6 +5,7 @@ if __name__ == '__main__':
 
     events = {
         "exit": "-EXIT-",
+        "clear": "-CLEAR-",
         "reload": "-RELOAD-"
     }
 
@@ -15,13 +16,17 @@ if __name__ == '__main__':
 
     layout = [
         [sg.Frame('Позиция для выгрузки', frame_layout, font='Any 12', title_color='black')],
-        [sg.Button("Обновить", key=events.get("reload")), sg.Button("Выход", key=events.get("exit"))]
+        [
+            sg.Button("Обновить", key=events.get("reload")),
+            sg.Button("Очистить", key=events.get("clear")),
+            sg.Button("Выход", key=events.get("exit"))]
     ]
 
     # Create the window
     window = sg.Window("Генератор позиции для выгрузки", layout, margins=(50, 50), finalize=True)
     window.bind('<F10>', events.get("exit"))
     window.bind('<F5>', events.get("reload"))
+    window.bind('<F6>', events.get("clear"))
 
     # Create an event loop
     while True:
@@ -32,6 +37,8 @@ if __name__ == '__main__':
             position = random.randint(1, 5)
             print(position)
             window["-TOUT-"].update(f"{position:3}")
+        if event == events.get("clear"):
+            window["-TOUT-"].update("")
         if event in (sg.WIN_CLOSED, events.get("exit")):
             break
 
