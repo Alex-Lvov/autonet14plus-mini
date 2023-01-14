@@ -27,7 +27,7 @@ if __name__ == '__main__':
             position = random.randint(1, 5)
             print(position)
             window["-TOUT-"].update(f"{position:3}")
-        if event == "Выход" or event == sg.WIN_CLOSED:
+        if event in (sg.WIN_CLOSED, "Выход"):
             break
 
 window.close()
