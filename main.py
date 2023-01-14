@@ -10,11 +10,13 @@ if __name__ == '__main__':
 
     layout = [
         [sg.Frame('Позиция для выгрузки', frame_layout, font='Any 12', title_color='black')],
-        [sg.Button("Обновить"), sg.Button("OK")]
+        [sg.Button("Обновить"), sg.Button("Выход")]
     ]
 
     # Create the window
-    window = sg.Window("Генератор позиции для выгрузки", layout, margins=(50, 50))
+    window = sg.Window("Генератор позиции для выгрузки", layout, margins=(50, 50), finalize=True)
+    window.bind('<F10>', 'Выход')
+    window.bind('<F5>', 'Обновить')
 
     # Create an event loop
     while True:
@@ -25,7 +27,7 @@ if __name__ == '__main__':
             position = random.randint(1, 5)
             print(position)
             window["-TOUT-"].update(f"{position:3}")
-        if event == "OK" or event == sg.WIN_CLOSED:
+        if event == "Выход" or event == sg.WIN_CLOSED:
             break
 
 window.close()
