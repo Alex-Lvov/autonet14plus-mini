@@ -7,8 +7,8 @@
    viewBox="0 0 200 200"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="autonet14+ task card.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="task-card.svg"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,36 +24,43 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.70710678"
-     inkscape:cx="383.25187"
-     inkscape:cy="512.65241"
+     inkscape:cx="381.83766"
+     inkscape:cy="511.2382"
      inkscape:window-width="1920"
-     inkscape:window-height="1027"
+     inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer2"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <sodipodi:guide
        position="0,177.19921"
        orientation="1,0"
-       id="guide1042" />
+       id="guide1042"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="1.3208496,200"
        orientation="0,-1"
-       id="guide1044" />
+       id="guide1044"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="99.998893,254.62989"
        orientation="1,0"
-       id="guide1054" />
+       id="guide1054"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="-23.760261,174.98858"
        orientation="0,-1"
-       id="guide1076" />
+       id="guide1076"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="-31.185342,25.001936"
        orientation="0,-1"
-       id="guide1078" />
+       id="guide1078"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs824" />
@@ -63,10 +70,36 @@
      id="layer1" />
   <g
      inkscape:groupmode="layer"
+     id="g2"
+     inkscape:label="bg-yellow"
+     style="display:none">
+    <rect
+       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.39572"
+       id="rect2"
+       width="199.60428"
+       height="199.60428"
+       x="0"
+       y="-1.5258789e-06" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g1"
+     inkscape:label="bg-blue"
+     style="display:none">
+    <rect
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.39572"
+       id="rect1"
+       width="199.60428"
+       height="199.60428"
+       x="0"
+       y="-1.5258789e-06"
+       inkscape:label="rect1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="bg-red"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <rect
        style="fill:#ff0000;stroke:#ff0000;stroke-width:0.39572"
        id="rect936"
